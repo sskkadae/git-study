@@ -20,7 +20,7 @@ jobs:
       - name: Create python-version.txt file
         run: echo "${{ matrix.python-version }}" > python-version.txt
       - name: Save Python version as artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: python-version-${{ matrix.python-version }}
-          path: python-version.txt
+          path: ${{github.workspace}}
