@@ -22,4 +22,4 @@ jobs:
         with:
           name: python-version-${{ matrix.python-version }}
           path: |
-            python-version.txt
+           ${{github.workspace}} python-version.txt
