@@ -18,7 +18,7 @@ jobs:
       - name: Display Python version
         run: python -c "import sys; print(sys.version)"
       - name: Save Python version as artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v2.2.4
         with:
           name: python-version-${{ matrix.python-version }}
           path: ${{github.workspace}}/python-version.txt
